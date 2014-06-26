@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["zoran@effectiva.hr"]
   spec.summary       = %q{HTML PDF API wrapper}
   spec.description   = %q{HTML PDF API is a service that allows you to convert HTML to PDF using standard technologies (HTML, CSS and JavaScript).}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/htmlpdfapi/hpa-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
