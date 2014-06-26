@@ -192,7 +192,7 @@ controllers/example_controller.rb
     end
 
 
-Sample application
+[Sample Rails application](https://github.com/htmlpdfapi/hpa_rails_example)
 
 
 Testing
