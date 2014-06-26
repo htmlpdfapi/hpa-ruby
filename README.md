@@ -1,4 +1,5 @@
 hpa-ruby
+=====
 
 This is a Ruby wrapper for [HTML PDF API](http://htmlpdfapi.com) - [Documentation](http://htmlpdfapi.com/documentation)
 
@@ -191,7 +192,7 @@ controllers/example_controller.rb
     end
 
 
-Example application
+Sample application
 
 
 Testing
@@ -205,3 +206,4 @@ Testing
 3. Commit your changes (`git commit -am "Add some feature"`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
