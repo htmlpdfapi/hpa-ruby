@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class HpaTest < MiniTest::Unit::TestCase
+class HpaTest < Minitest::Test
 
 
   def setup 
@@ -60,7 +60,7 @@ class HpaTest < MiniTest::Unit::TestCase
 
 
   def test_create_pdf_from_url
-    response = Hpa::Pdf.create(:url => "http://htmlpdfapi.com/examples/example.html")
+    response = Hpa::Pdf.create(:url => "https://htmlpdfapi.com/examples/example.html")
 
     assert_equal 200, response.code
     assert_equal "%PDF", response.body[0, 4]

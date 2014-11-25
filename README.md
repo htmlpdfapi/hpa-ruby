@@ -1,7 +1,7 @@
 hpa-ruby
 =====
 
-This is a Ruby wrapper for [HTML PDF API](http://htmlpdfapi.com) - [Documentation](http://htmlpdfapi.com/documentation)
+This is a Ruby wrapper for [HTML PDF API](https://htmlpdfapi.com) - [Documentation](https://htmlpdfapi.com/documentation)
 
 HTML PDF API is a service that allows you to convert HTML to PDF using standard technologies (HTML, CSS and JavaScript).
 
@@ -40,7 +40,7 @@ Then you have to set your API token:
 
 Set API base (endpoint and version)
 
-    Hpa.api_base = "htmlpdfapi.com/api/v1" # default
+    Hpa.api_base = "https://htmlpdfapi.com/api/v1" # default
 
 
 Assets
@@ -109,7 +109,7 @@ PDFs
 
 From url:
 
-    response = Hpa::Pdf.create(:url => "http://htmlpdfapi.com/examples/example.html")
+    response = Hpa::Pdf.create(:url => "https://htmlpdfapi.com/examples/example.html")
 
 From HTML string:
 

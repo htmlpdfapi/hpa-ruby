@@ -15,7 +15,7 @@ require "hpa/errors/api_error"
 module Hpa
 
   @@api_token = nil
-  @@api_base = "htmlpdfapi.com/api/v1"
+  @@api_base = "https://htmlpdfapi.com/api/v1"
 
   def self.api_token
     @@api_token

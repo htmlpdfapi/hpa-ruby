@@ -1,10 +1,11 @@
 require 'hpa'
+require 'minitest'
 require 'minitest/unit'
 require 'minitest/autorun'
 require 'minitest/pride'
 
 
-class MiniTest::Unit::TestCase
+class Minitest::Test
 
   Hpa.api_token = ENV['api_token']
   Hpa.api_base = ENV['api_base'] if ENV['api_base']
