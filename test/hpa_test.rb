@@ -1,11 +1,12 @@
 require 'test_helper'
+require 'json'
 
 class HpaTest < Minitest::Test
 
 
-  def setup 
-    # add 2 sec delay between tests
-    sleep 2
+  def setup
+    # add 1 sec delay between tests
+    sleep 1
   end
 
 
@@ -16,8 +17,8 @@ class HpaTest < Minitest::Test
 
 
   def test_create_find_and_delete_asset
-    # first, check if asset named "hpa-4ff6375e12f1.png" 
-    # already exists and delete it 
+    # first, check if asset named "hpa-4ff6375e12f1.png"
+    # already exists and delete it
     assets = JSON.parse(Hpa::Asset.get.body)
     asset = assets.detect { |a| a["name"] == "hpa-4ff6375e12f1.png"}
     Hpa::Asset.delete(asset["id"]) if asset
